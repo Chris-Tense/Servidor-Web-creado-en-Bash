@@ -4,7 +4,7 @@
 
 Servidor HTTP minimalista desarrollado completamente en Bash con fines educativos.
 
-Descripción
+**Descripción**
 
 Este proyecto implementa un servidor web funcional usando Bash + socat, diseñado para aprender cómo funciona HTTP desde cero.
 Permite servir archivos estáticos (HTML, CSS, JS, imágenes, etc.) manejando:
@@ -18,7 +18,7 @@ Permite servir archivos estáticos (HTML, CSS, JS, imágenes, etc.) manejando:
 
 Ideal para entender el funcionamiento interno de un servidor web sin usar frameworks o lenguajes complejos.
 
-Características
+**Características**
 
 - Servidor HTTP en Bash puro
 - Manejo de múltiples conexiones con socat
@@ -29,18 +29,18 @@ Características
 - Soporte para archivos estáticos
 - Preparado para HTTPS (usando Caddy como reverse proxy)
 
-Estructura
+**Estructura**
 .
 ├── serverbash.sh     # Script principal
 ├── index.html        # Página principal (Conmemorando al CLUB ATLETICO PLATENSE de Argentina, Campeon 2025)
 ├── access.log        # Logs de conexiones
 └── tmp/              # Archivos temporales (auto-generados)
 
-Requisitos
+**Requisitos**
 
 Instalar socat: sudo apt install socat (Sistemas basados en Debian)
 
-Uso
+**Uso**
 
 Dar permisos de ejecución: chmod +x serverbash.sh
 
@@ -48,7 +48,7 @@ Ejecutar el servidor: ./serverbash.sh
 
 Abrir en el navegador: http://localhost:8888
 
-Uso con Docker
+**Uso con Docker**
 
 También podés ejecutar el servidor usando Docker, sin necesidad de instalar dependencias manualmente.
 
@@ -75,7 +75,7 @@ Ejecutar: docker-compose up -d
 
 Web: http://localhost:9999
 
-Objetivo Educativo
+**Objetivo Educativo**
 
 Este proyecto está hecho para:
 
