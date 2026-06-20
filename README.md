@@ -1,6 +1,6 @@
-Servidor Web en Bash
+# Servidor Web en Bash
 
-CLUB ATLÉTICO PLATENSE CAMPEÓN 2025!!
+**CLUB ATLÉTICO PLATENSE CAMPEÓN 2025!!**
 
 Servidor HTTP minimalista desarrollado completamente en Bash con fines educativos.
 
