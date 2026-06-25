@@ -44,11 +44,11 @@ Abrir en el navegador: http://localhost:8888
 
 Probar metodos HTTP
 
-- curl -X GET ip:8888
-- curl -X POST ip:8888/platense.txt -d "Platense POST"
-- curl -X PUT ip:8888/platense.txt -d "Platense PUT"
-- curl -X PATCH ip:8888/platense.txt -d "Platense PATCH"
-- curl -X DELETE ip:8888/platense.txt
+- curl -X GET ip-del-sevidor:8888
+- curl -X POST ip-del-sevidor:8888/platense.txt -d "Platense POST"
+- curl -X PUT ip-del-sevidor:8888/platense.txt -d "Platense PUT"
+- curl -X PATCH ip-del-sevidor:8888/platense.txt -d "Platense PATCH"
+- curl -X DELETE ip-del-sevidor:8888/platense.txt
 
 **Uso con Docker**
 
@@ -79,11 +79,11 @@ Web: http://localhost:9999
 
 - Probar Metodos HTTP
 
-- curl -X GET ip:9999
-- curl -X POST ip:9999/platense.txt -d "Platense POST"
-- curl -X PUT ip:9999/platense.txt -d "Platense PUT"
-- curl -X PATCH ip:9999/platense.txt -d "Platense PATCH"
-- curl -X DELETE ip:9999/platense.txt
+- curl -X GET ip-del-sevidor:9999
+- curl -X POST ip-del-sevidor:9999/platense.txt -d "Platense POST"
+- curl -X PUT ip-del-sevidor:9999/platense.txt -d "Platense PUT"
+- curl -X PATCH ip-del-sevidor:9999/platense.txt -d "Platense PATCH"
+- curl -X DELETE ip-del-sevidor:9999/platense.txt
 
 **Objetivo Educativo**
 
