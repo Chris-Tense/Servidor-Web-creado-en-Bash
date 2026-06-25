@@ -42,6 +42,14 @@ Ejecutar el servidor: ./serverbash.sh
 
 Abrir en el navegador: http://localhost:8888
 
+Probar metodos HTTP
+
+curl -X GET 192.168.122.235:8888
+curl -X POST 192.168.122.235:8888/platense.txt -d "Platense POST"
+curl -X PUT 192.168.122.235:8888/platense.txt -d "Platense PUT"
+curl -X PATCH 192.168.122.235:8888/platense.txt -d "Platense PATCH"
+curl -X DELETE 192.168.122.235:8888/platense.txt
+
 **Uso con Docker**
 
 También podés ejecutar el servidor usando Docker, sin necesidad de instalar dependencias manualmente.
@@ -54,7 +62,7 @@ Podés levantar el servidor fácilmente con docker-compose:
 
 services:
   serverbash:
-    image: christense/serverbash:1.0
+    image: christense/serverbash:1.1
     container_name: serverbash
     ports:
       - "9999:8888"
@@ -69,11 +77,19 @@ Ejecutar: docker-compose up -d
 
 Web: http://localhost:9999
 
+- Probar Metodos HTTP
+
+curl -X GET 192.168.122.235:9999
+curl -X POST 192.168.122.235:9999/platense.txt -d "Platense POST"
+curl -X PUT 192.168.122.235:9999/platense.txt -d "Platense PUT"
+curl -X PATCH 192.168.122.235:9999/platense.txt -d "Platense PATCH"
+curl -X DELETE 192.168.122.235:9999/platense.txt
+
 **Objetivo Educativo**
 
 Este proyecto está hecho para:
 
 - Entender cómo funcionan los servidores web
-- Aprender protocolos HTTP
+- Aprender protocolos y metodos HTTP
 - Experimentar con Bash scripting avanzado
 - Comprender sockets y concurrencia
