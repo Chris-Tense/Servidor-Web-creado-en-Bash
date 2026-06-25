@@ -20,7 +20,7 @@ Ideal para entender el funcionamiento interno de un servidor web sin usar framew
 
 **Características**
 
-- Servidor HTTP en Bash puro
+- Servidor HTTP en Bash
 - Manejo de múltiples conexiones con socat
 - Cache en RAM para archivos frecuentes
 - Protección contra ataques comunes (path traversal, slowloris)
@@ -28,6 +28,12 @@ Ideal para entender el funcionamiento interno de un servidor web sin usar framew
 - Logs de acceso (access.log)
 - Soporte para archivos estáticos
 - Preparado para HTTPS (usando Caddy como reverse proxy)
+- Soporte para múltiples métodos HTTP:
+-- GET → Obtener archivos
+-- POST → Crear archivos
+-- PUT → Reemplazar archivos
+-- PATCH → Modificar (append) archivos
+-- DELETE → Eliminar archivos
 
 **Estructura**
 
