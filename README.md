@@ -44,11 +44,11 @@ Abrir en el navegador: http://localhost:8888
 
 Probar metodos HTTP
 
-curl -X GET 192.168.122.235:8888
-curl -X POST 192.168.122.235:8888/platense.txt -d "Platense POST"
-curl -X PUT 192.168.122.235:8888/platense.txt -d "Platense PUT"
-curl -X PATCH 192.168.122.235:8888/platense.txt -d "Platense PATCH"
-curl -X DELETE 192.168.122.235:8888/platense.txt
+- curl -X GET 192.168.122.235:8888
+- curl -X POST 192.168.122.235:8888/platense.txt -d "Platense POST"
+- curl -X PUT 192.168.122.235:8888/platense.txt -d "Platense PUT"
+- curl -X PATCH 192.168.122.235:8888/platense.txt -d "Platense PATCH"
+- curl -X DELETE 192.168.122.235:8888/platense.txt
 
 **Uso con Docker**
 
@@ -79,11 +79,11 @@ Web: http://localhost:9999
 
 - Probar Metodos HTTP
 
-curl -X GET 192.168.122.235:9999
-curl -X POST 192.168.122.235:9999/platense.txt -d "Platense POST"
-curl -X PUT 192.168.122.235:9999/platense.txt -d "Platense PUT"
-curl -X PATCH 192.168.122.235:9999/platense.txt -d "Platense PATCH"
-curl -X DELETE 192.168.122.235:9999/platense.txt
+- curl -X GET 192.168.122.235:9999
+- curl -X POST 192.168.122.235:9999/platense.txt -d "Platense POST"
+- curl -X PUT 192.168.122.235:9999/platense.txt -d "Platense PUT"
+- curl -X PATCH 192.168.122.235:9999/platense.txt -d "Platense PATCH"
+- curl -X DELETE 192.168.122.235:9999/platense.txt
 
 **Objetivo Educativo**
 
