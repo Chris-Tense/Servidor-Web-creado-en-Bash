@@ -77,7 +77,7 @@ Podés levantar el servidor fácilmente con docker-compose:
 
 services:
   serverbash:
-    image: christense/serverbash:1.1
+    image: christense/serverbash:latest
     container_name: serverbash
     ports:
       - "9999:8888"
@@ -90,15 +90,9 @@ volumes:
 
 Ejecutar: docker-compose up -d
 
-Web: http://localhost:9999
-
-- Probar Metodos HTTP
-
-- curl -X GET ip-del-sevidor:9999
-- curl -X POST ip-del-sevidor:9999/platense.txt -d "Platense POST"
-- curl -X PUT ip-del-sevidor:9999/platense.txt -d "Platense PUT"
-- curl -X PATCH ip-del-sevidor:9999/platense.txt -d "Platense PATCH"
-- curl -X DELETE ip-del-sevidor:9999/platense.txt
+- Web: http://localhost:9999
+- Web: http://dominio1.com:9999
+- Web: http://dominio2.com:9999 
 
 **Objetivo Educativo**
 
