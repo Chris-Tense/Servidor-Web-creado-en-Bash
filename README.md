@@ -22,6 +22,7 @@ Ideal para entender el funcionamiento interno de un servidor web sin usar framew
 - Soporte para archivos estáticos
 - Preparado para HTTPS (usando Caddy como reverse proxy)
 - Soporte para múltiples métodos HTTP (GET,POST,PUT,PATCH,DELETE)
+- Soporta Multidominios
 
 **Estructura**
 
@@ -29,6 +30,8 @@ Ideal para entender el funcionamiento interno de un servidor web sin usar framew
 - index.html        # Página principal (Conmemorando al CLUB ATLETICO PLATENSE de Argentina, Campeon 2025)
 - access.log        # Logs de conexiones
 - tmp/              # Archivos temporales (auto-generados)
+- dominio1/         # Archivos del Dominio1 (Soporte Multidominio)
+- dominio2/         # Archivos del Dominio2 (Soporte Multidominio)
 
 **Requisitos**
 
@@ -40,7 +43,7 @@ Dar permisos de ejecución: chmod +x serverbash.sh
 
 Ejecutar el servidor: ./serverbash.sh
 
-Abrir en el navegador: http://localhost:8888
+Abrir en el navegador: http://localhost:8888 (default)
 
 Probar metodos HTTP
 
@@ -49,6 +52,18 @@ Probar metodos HTTP
 - curl -X PUT ip-del-sevidor:8888/platense.txt -d "Platense PUT"
 - curl -X PATCH ip-del-sevidor:8888/platense.txt -d "Platense PATCH"
 - curl -X DELETE ip-del-sevidor:8888/platense.txt
+
+Probar Multidominios
+
+- Editar el archivo /etc/hosts en linux, para poder resolver los dominios de prueba
+  Ejemplo: Si mi ip es 192.168.0.14, configurar el archivo hosts de esta forma:
+  sudo nano /etc/hosts
+  agregar:
+  192.168.0.14  dominio1.com
+  192.168.0.14  dominio2.com
+- Despues de configurar el archivos hosts, navegar por los dominios
+  http://dominio1.com:8888
+  http://dominio2.com:8888  
 
 **Uso con Docker**
 
