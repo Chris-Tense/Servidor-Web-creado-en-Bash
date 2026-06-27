@@ -1,6 +1,6 @@
 services:
   serverbash:
-    image: christense/serverbash:1.1
+    image: christense/serverbash:latest
     container_name: serverbash
     ports:
       - "9999:8888"
